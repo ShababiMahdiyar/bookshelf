@@ -1,1 +1,15 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="header-row">
+  <div class="header-left-column">
+    <span routerLink="/home">BookShelf</span>
+  </div>
+  <div class="header-right-column">
+    <button
+      mat-button
+      routerLink="/books"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      All Books
+    </button>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,14 @@
+.header-row {
+  display: flex;
+}
+.header-right-column {
+  margin-left: auto;
+}
+.header-left-column {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.2);
+}

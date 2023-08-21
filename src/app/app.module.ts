@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,14 @@ import { HeaderComponent } from './components/shared/header/header.component';
     BooksListComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+  ],
 })
 export class AppModule {}
